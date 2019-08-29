@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-
     @IBOutlet weak var animateTitle: UILabel!
     @IBOutlet weak var animateDescription: UILabel!
     
@@ -25,22 +23,15 @@ class ViewController: UIViewController {
         animateTitle.alpha = 0
         animateDescription.alpha = 0
         
-        let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: false)
-
-    
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: false)
     }
     
     @objc func runTimedCode() {
-//        if shouldFadeIn {
-            fadeIn()
-//        } else {
-            fadeOut()
-//        }
-//        shouldFadeIn = !shouldFadeIn
+        fadeIn()
+        fadeOut()
     }
     
-    func fadeOut() {
-        print("fading out")
+    private func fadeOut() {
         DispatchQueue.main.async {
             UIView.animate(withDuration: 1.0, delay: 3.0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
                 self.animateTitle.transform = CGAffineTransform.identity
@@ -54,10 +45,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func fadeIn() {
-        print("fading in")
-
-        
+    private func fadeIn() {
         DispatchQueue.main.async {
             UIView.animate(withDuration: 1.0, delay: 0.25, options: UIView.AnimationOptions.curveEaseInOut, animations: {
                 self.animateTitle.transform = CGAffineTransform.init(translationX: 20, y: 0)

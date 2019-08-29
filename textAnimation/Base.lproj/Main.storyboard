@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="textAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-Ju-sjY">
+                                <rect key="frame" x="0.0" y="0.0" width="960" height="1080"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPROMISED HOST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv4-9H-biy" userLabel="Title">
+                                        <rect key="frame" x="150" y="400" width="960" height="120"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="100"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDw-mL-xoj" userLabel="Description">
+                                        <rect key="frame" x="150" y="540" width="960" height="36"/>
+                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tv4-9H-biy" firstAttribute="leading" secondItem="Pn2-Ju-sjY" secondAttribute="leading" constant="150" id="5AV-FQ-S7h"/>
+                                    <constraint firstAttribute="trailing" secondItem="tv4-9H-biy" secondAttribute="trailing" constant="-150" id="7ax-xI-mh2"/>
+                                    <constraint firstItem="gDw-mL-xoj" firstAttribute="top" secondItem="tv4-9H-biy" secondAttribute="bottom" constant="20" id="KUC-YB-ibg"/>
+                                    <constraint firstItem="tv4-9H-biy" firstAttribute="top" secondItem="Pn2-Ju-sjY" secondAttribute="top" constant="400" id="jlw-lx-kSA"/>
+                                    <constraint firstItem="gDw-mL-xoj" firstAttribute="trailing" secondItem="tv4-9H-biy" secondAttribute="trailing" id="ou7-sq-9s7"/>
+                                    <constraint firstItem="gDw-mL-xoj" firstAttribute="width" secondItem="tv4-9H-biy" secondAttribute="width" id="pfr-FF-o2t"/>
+                                    <constraint firstItem="tv4-9H-biy" firstAttribute="width" secondItem="Pn2-Ju-sjY" secondAttribute="width" id="sqt-gu-fPo"/>
+                                    <constraint firstItem="gDw-mL-xoj" firstAttribute="leading" secondItem="tv4-9H-biy" secondAttribute="leading" id="vQY-ge-ezt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27255515399261376" green="0.59690823861563169" blue="0.59624556444414334" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Pn2-Ju-sjY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="5uo-hm-6Gx"/>
+                            <constraint firstItem="Pn2-Ju-sjY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="70j-9k-TC9"/>
+                            <constraint firstItem="Pn2-Ju-sjY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AeQ-7N-SxE"/>
+                            <constraint firstItem="Pn2-Ju-sjY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qla-nv-ZKa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <connections>
+                        <outlet property="animateDescription" destination="gDw-mL-xoj" id="2c9-9m-NH9"/>
+                        <outlet property="animateTitle" destination="tv4-9H-biy" id="qoO-0v-G2A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
